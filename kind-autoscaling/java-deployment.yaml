@@ -17,11 +17,7 @@ spec:
         image: avis22/java-app:1.0
         ports:
            - containerPort: 8280
-      resources:
-         limits:
-           cpu: "500m"
-         requests:
-           cpu: "200m"
+    
       imagePullSecrets:
            - name: regcred
 
