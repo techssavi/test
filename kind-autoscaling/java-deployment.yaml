@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: kind-autoscaling
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: kind-autoscaling
