@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: java-app
+  name: kind-autoscaling
 spec:
   replicas: 1 
   selector:
     matchLabels:
-      app: java-app
+      app: kind-autoscaling
   template:
     metadata:
       labels:
-        app: java-app
+        app: kind-autoscaling
     spec:
       containers:
-      - name: java-app
+      - name: kind-autoscaling
         image: avis22/java-app:1.0
         ports:
            - containerPort: 8080
